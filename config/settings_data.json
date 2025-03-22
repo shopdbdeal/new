@@ -9,9 +9,9 @@
  */
 {
   "current": {
-    "heading_color": "#1e2d7d",
+    "heading_color": "#1a237e",
     "text_color": "#677279",
-    "accent_color": "#00badb",
+    "accent_color": "#0094df",
     "link_color": "#00badb",
     "border_color": "#e1e3e4",
     "background": "#f3f5f6",
@@ -22,7 +22,7 @@
     "primary_button_text_color": "#ffffff",
     "secondary_button_background": "#1e2d7d",
     "secondary_button_text_color": "#ffffff",
-    "header_background": "#1e2d7d",
+    "header_background": "#1a237e",
     "header_text_color": "#ffffff",
     "header_light_text_color": "#a3afef",
     "header_accent_color": "#00badb",
