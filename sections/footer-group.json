@@ -61,17 +61,17 @@
     "footer": {
       "type": "footer",
       "blocks": {
+        "footer-1": {
+          "type": "links",
+          "settings": {
+            "menu": "footer"
+          }
+        },
         "footer-0": {
           "type": "text",
           "settings": {
             "title": "About the shop",
             "content": "<p>Use this text area to tell your customers about your brand and vision. You can change it in the theme settings.</p>"
-          }
-        },
-        "footer-1": {
-          "type": "links",
-          "settings": {
-            "menu": "footer"
           }
         },
         "footer-2": {
@@ -83,8 +83,8 @@
         }
       },
       "block_order": [
-        "footer-0",
         "footer-1",
+        "footer-0",
         "footer-2"
       ],
       "settings": {
