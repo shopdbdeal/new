@@ -82,6 +82,7 @@
         },
         "newsletter_L8ANgQ": {
           "type": "newsletter",
+          "disabled": true,
           "settings": {
             "title": "Newsletter",
             "subheading": "<p>A short sentence describing what someone will receive by subscribing</p>"
@@ -95,11 +96,11 @@
         "newsletter_L8ANgQ"
       ],
       "settings": {
-        "show_social_media": true,
-        "enable_follow_on_shop": true,
+        "show_social_media": false,
+        "enable_follow_on_shop": false,
         "show_payment_icons": true,
-        "show_locale_selector": true,
-        "show_country_selector": true
+        "show_locale_selector": false,
+        "show_country_selector": false
       }
     }
   },
