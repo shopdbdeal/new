@@ -77,12 +77,11 @@
           "type": "text",
           "settings": {
             "title": "eSavinghub",
-            "content": "<p><strong>Need help?</strong> Contact us via the form, email, phone, or live chat <strong>Monday to Friday from 9:00 AM to 5:00 PM.</strong></p><p>Our teams will respond to you within 24 hours.</p><ul><li><strong>Email:</strong> contact@esavinghub.com</li><li><strong>Contact Number:</strong> +33 756 92 53 58</li><li><strong>Live Chat:</strong> Available on our website during business hours</li><li><strong>Address:</strong> 7 Rue Broca, 75005 Paris, France</li></ul>"
+            "content": "<p><strong>Need help?</strong> Contact us via the form, email, phone, or live chat <strong>Monday to Friday from 9:00 AM to 5:00 PM.</strong></p><p>Our teams will respond to you within 24 hours.</p><ul><li><strong>Email:</strong> contact@esavinghub.com</li><li><strong>Contact Number:</strong> +33 756 92 53 58</li><li><strong>Live Chat:</strong> Available on our website during business hours</li><li><strong>Address:</strong> 7 Rue Broca, 75005 Paris, France</li></ul><p></p><p></p><p></p><p></p><p></p><p></p><p></p><p></p><p></p><p></p><p></p>"
           }
         },
-        "footer-2": {
+        "newsletter_L8ANgQ": {
           "type": "newsletter",
-          "disabled": true,
           "settings": {
             "title": "Newsletter",
             "subheading": "<p>A short sentence describing what someone will receive by subscribing</p>"
@@ -93,7 +92,7 @@
         "footer-1",
         "links_wMDT9j",
         "footer-0",
-        "footer-2"
+        "newsletter_L8ANgQ"
       ],
       "settings": {
         "show_social_media": true,
