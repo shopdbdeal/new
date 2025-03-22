@@ -1,1 +1,185 @@
-{"sections":{"main":{"type":"main-product","blocks":{"product_meta":{"type":"product_meta","settings":{}},"variant_selector":{"type":"variant_selector","settings":{}},"buy_buttons":{"type":"buy_buttons","settings":{}},"description":{"type":"description","settings":{}}},"block_order":["product_meta","variant_selector","buy_buttons","description"],"settings":{}},"product-recommendations":{"type":"product-recommendations","settings":{}},"recently-viewed-products":{"type":"recently-viewed-products","settings":{}}},"order":["main","product-recommendations","recently-viewed-products"]}
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-product",
+      "blocks": {
+        "product_meta": {
+          "type": "product_meta",
+          "settings": {
+            "show_vendor": true,
+            "show_sku": true,
+            "show_reviews_badge": true,
+            "show_share_buttons": false
+          }
+        },
+        "variant_selector": {
+          "type": "variant_selector",
+          "settings": {
+            "selector_mode": "block",
+            "color_mode": "variant_image",
+            "show_quantity_selector": true,
+            "show_taxes_included": false,
+            "show_inventory_quantity": true,
+            "low_inventory_threshold": 10
+          }
+        },
+        "buy_buttons": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_payment_button": true
+          }
+        },
+        "description": {
+          "type": "description",
+          "settings": {
+            "display_mode": "view_more"
+          }
+        },
+        "liquid_FYe6DG": {
+          "type": "liquid",
+          "settings": {
+            "title": "Shipping & Returns",
+            "liquid": "<div class=\"card__collapsible-content\">\n                            <div class=\"rte text--pull\">\n                              <ul>\n<li>Free shipping&nbsp;for all orders over <span class=\"shipping-policy-shipping-amount\">$49.</span>\n</li>\n<li>Once your product has shipped, it usually takes 2 to&nbsp;5 business days to receive depending on your location.</li>\n<li>You can return your product up to 30 days after receiving your order. Please make sure that the products are not used or damaged and in the original box.</li>\n</ul>\n                            </div>\n                          </div>",
+            "display_mode": "collapse"
+          }
+        },
+        "trust_pQ6iGw": {
+          "type": "trust",
+          "settings": {
+            "trust_title": "Payment & Security",
+            "show_payment_icons": true
+          }
+        },
+        "judge_me_reviews_review_snippet_widget_zHX49L": {
+          "type": "shopify://apps/judge-me-reviews/blocks/review_snippet_widget/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
+          "settings": {}
+        }
+      },
+      "block_order": [
+        "product_meta",
+        "variant_selector",
+        "buy_buttons",
+        "description",
+        "liquid_FYe6DG",
+        "trust_pQ6iGw",
+        "judge_me_reviews_review_snippet_widget_zHX49L"
+      ],
+      "custom_css": [
+        ".jdgm-rev-snippet-card__pic-wrapper {display: none;}"
+      ],
+      "settings": {
+        "image_size": "small",
+        "enable_video_looping": false,
+        "enable_image_zoom": false,
+        "zoom_effect": "outside",
+        "carousel_effect": "fade"
+      }
+    },
+    "17414855654a307213": {
+      "type": "apps",
+      "blocks": {
+        "judge_me_reviews_featured_carousel_UeVrnk": {
+          "type": "shopify://apps/judge-me-reviews/blocks/featured_carousel/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
+          "disabled": true,
+          "settings": {
+            "maxwidth": 1082
+          }
+        }
+      },
+      "block_order": [
+        "judge_me_reviews_featured_carousel_UeVrnk"
+      ],
+      "settings": {
+        "include_margins": true
+      }
+    },
+    "main_product_pEtYKj": {
+      "type": "main-product",
+      "disabled": true,
+      "settings": {
+        "image_size": "small",
+        "enable_video_looping": false,
+        "enable_image_zoom": false,
+        "zoom_effect": "outside",
+        "carousel_effect": "fade"
+      }
+    },
+    "product-recommendations": {
+      "type": "product-recommendations",
+      "settings": {
+        "heading": "You may also like",
+        "show_quick_buy": false
+      }
+    },
+    "recently-viewed-products": {
+      "type": "recently-viewed-products",
+      "settings": {
+        "title": "Recently viewed",
+        "show_quick_buy": false
+      }
+    },
+    "loox-product-reviews-app-section": {
+      "type": "apps",
+      "settings": {
+        "include_margins": false
+      }
+    },
+    "17414857553d2ca024": {
+      "type": "apps",
+      "blocks": {
+        "judge_me_reviews_review_widget_riYTzB": {
+          "type": "shopify://apps/judge-me-reviews/blocks/review_widget/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
+          "settings": {}
+        }
+      },
+      "block_order": [
+        "judge_me_reviews_review_widget_riYTzB"
+      ],
+      "custom_css": [
+        ".container {background-color: #ffffff !important;}",
+        ".jdgm-star {color: #ffbd00 !important;}",
+        ".jdgm-widget .jdgm-row-stars {border-top: 1px solid #e4e4e4;}",
+        ".jdgm-rev__thumb-btn {color: #0094df !important;}",
+        ".jdgm-rev__read-full {color: #0094df !important;}",
+        ".jdgm-rev-widg__title {color: #1a237e !important; font-weight: 500 !important;}",
+        ".jdgm-rev-carousel-next {color: #0094df !important;}",
+        ".jdgm-rev__pinned {display: none !important;}"
+      ],
+      "settings": {
+        "include_margins": true
+      }
+    },
+    "1741487595e45c1caf": {
+      "type": "apps",
+      "settings": {
+        "include_margins": true
+      }
+    },
+    "1741488582c6c72a34": {
+      "type": "apps",
+      "settings": {
+        "include_margins": true
+      }
+    }
+  },
+  "order": [
+    "main",
+    "17414855654a307213",
+    "main_product_pEtYKj",
+    "product-recommendations",
+    "recently-viewed-products",
+    "loox-product-reviews-app-section",
+    "17414857553d2ca024",
+    "1741487595e45c1caf",
+    "1741488582c6c72a34"
+  ]
+}
