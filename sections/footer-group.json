@@ -11,6 +11,15 @@
   "type": "footer",
   "name": "Footer group",
   "sections": {
+    "newsletter_DhjxJV": {
+      "type": "newsletter",
+      "settings": {
+        "title": "SUBSCRIBE NOW!",
+        "content": "<p>SUBSCRIBE TO THE NEWSLETTER TO NOT MISS ANYTHING!</p>",
+        "background": "#1e2d7d",
+        "text": "#ffffff"
+      }
+    },
     "text-with-icons": {
       "type": "text-with-icons",
       "blocks": {
@@ -105,6 +114,7 @@
     }
   },
   "order": [
+    "newsletter_DhjxJV",
     "text-with-icons",
     "footer"
   ]
