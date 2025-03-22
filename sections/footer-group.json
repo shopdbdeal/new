@@ -67,15 +67,22 @@
             "menu": "footer"
           }
         },
+        "links_wMDT9j": {
+          "type": "links",
+          "settings": {
+            "menu": "contact"
+          }
+        },
         "footer-0": {
           "type": "text",
           "settings": {
-            "title": "About the shop",
-            "content": "<p>Use this text area to tell your customers about your brand and vision. You can change it in the theme settings.</p>"
+            "title": "eSavinghub",
+            "content": "<p><strong>Need help?</strong> Contact us via form, email, or phone <strong>Monday to Friday, 9:00 a.m. to 5:00 p.m.</strong></p><p>Our teams will respond to you within 24 hours.</p><ul><li></li></ul>"
           }
         },
         "footer-2": {
           "type": "newsletter",
+          "disabled": true,
           "settings": {
             "title": "Newsletter",
             "subheading": "<p>A short sentence describing what someone will receive by subscribing</p>"
@@ -84,6 +91,7 @@
       },
       "block_order": [
         "footer-1",
+        "links_wMDT9j",
         "footer-0",
         "footer-2"
       ],
