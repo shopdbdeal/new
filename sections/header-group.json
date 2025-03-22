@@ -16,10 +16,10 @@
       "settings": {
         "background": "#1e2d7d",
         "text_color": "#ffffff",
-        "text": "Announce something here",
-        "text_position": "left",
+        "text": "Free shipping over $49 ● Hassle-free returns",
+        "text_position": "center",
         "link": "",
-        "show_newsletter": true,
+        "show_newsletter": false,
         "newsletter_button": "Subscribe & Save",
         "newsletter_title": "Newsletter",
         "newsletter_content": "<p>A short sentence describing what someone will receive by subscribing</p>"
