@@ -225,30 +225,6 @@
 
               {%- comment -%}
               --------------------------------------------------------------------------------------
-              COMPLEMENTARY PRODUCTS
-              --------------------------------------------------------------------------------------
-              {%- endcomment -%}
-              {%- when 'complementary_products' -%}
-                <product-recommendations class="product-block-list__item product-block-list__item--complementary" intent="complementary" product="{{ product.id }}" limit="{{ block.settings.products_count }}" section-id="{{ section.id }}" {{ block.shopify_attributes }}>
-                  {%- if recommendations.performed and recommendations.products_count > 0 -%}
-                    <div class="card">
-                      <div class="card__header">
-                        <h2 class="card__title heading h3">{{ block.settings.title | escape }}</h2>
-                      </div>
-
-                      <div class="card__section">
-                        <div class="complementary-product-list">
-                          {%- for product in recommendations.products -%}
-                            {%- render 'product-item', product: product, horizontal: true, hide_labels: true, show_add_to_cart: block.settings.show_quick_buy, complementary_products: true -%}
-                          {%- endfor -%}
-                        </div>
-                      </div>
-                    </div>
-                  {%- endif -%}
-                </product-recommendations>
-
-              {%- comment -%}
-              --------------------------------------------------------------------------------------
               REVIEWS
               --------------------------------------------------------------------------------------
               {%- endcomment -%}
@@ -266,7 +242,7 @@
 
               {%- comment -%}
               --------------------------------------------------------------------------------------
-              TRUST BADGE
+              TRUST BADGE (MODIFICATION PRINCIPALE ICI)
               --------------------------------------------------------------------------------------
               {%- endcomment -%}
 
@@ -277,45 +253,61 @@
                   {%- assign show_payment_icons = false -%}
                 {%- endif -%}
 
-                {%- if block.settings.custom_security_badge or show_payment_icons -%}
+                {%- if block.settings.custom_security_badge_1 or block.settings.custom_security_badge_2 or block.settings.custom_security_badge_3 or show_payment_icons -%}
                   <div class="product-block-list__item product-block-list__item--trust">
                     <div class="card">
                       <div class="card__header card__header--flex">
                         <h2 class="card__title heading h3">{{ block.settings.trust_title | escape }}</h2>
-
                         {%- render 'icon', icon: 'lock', width: 22, height: 24 -%}
                       </div>
 
                       <div class="card__section">
                         {%- if show_payment_icons -%}
-                          {%- if block.settings.custom_security_badge -%}
-                            <p class="card__subtitle heading h6">{{ 'product.general.payment' | t }}</p>
-                          {%- endif -%}
-
+                          <p class="card__subtitle heading h6">{{ 'product.general.payment' | t }}</p>
                           <div class="payment-list">
                             {% for type in shop.enabled_payment_types %}
                               {{ type | payment_type_svg_tag: class: 'payment-list__item' }}
                             {% endfor %}
                           </div>
-
                           <p class="payment-list__notice">{{ 'product.general.payment_notice' | t }}</p>
                         {%- endif -%}
 
-                        {%- if show_payment_icons and block.settings.custom_security_badge -%}
+                        {%- if show_payment_icons and block.settings.custom_security_badge_1 or block.settings.custom_security_badge_2 or block.settings.custom_security_badge_3 -%}
                           <hr class="card__separator">
                         {%- endif -%}
 
-                        {%- if block.settings.custom_security_badge -%}
-                          {%- if show_payment_icons -%}
-                            <p class="card__subtitle heading h6">{{ 'product.general.security' | t }}</p>
-                          {%- endif -%}
-
-                          {%- assign badge_width = block.settings.custom_security_badge.width | at_most: 450 | append: 'x' -%}
-                          <img class="product__trust-badge" style="width: {{ block.settings.custom_security_badge_width }}px"
-                               loading="lazy"
-                               src="{{ block.settings.custom_security_badge | img_url: badge_width }}"
-                               srcset="{{ block.settings.custom_security_badge | img_url: badge_width }} 1x, {{ block.settings.custom_security_badge | img_url: badge_width, scale: 2 }} 2x"
-                               alt="{{ block.settings.custom_security_badge.alt | escape }}">
+                        {%- if block.settings.custom_security_badge_1 or block.settings.custom_security_badge_2 or block.settings.custom_security_badge_3 -%}  
+                          <p class="card__subtitle heading h6">{{ 'product.general.security' | t }}</p>
+                          <div class="trust-badges-container" style="display: flex; justify-content: flex-start; gap: 20px; flex-wrap: wrap; margin-top: 15px;">
+                            {%- for i in (1..3) -%}
+                              {%- assign badge_setting = 'custom_security_badge_' | append: i -%}
+                              {%- assign width_setting = 'custom_security_badge_width_' | append: i -%}
+                              
+                              {%- if block.settings[badge_setting] != blank -%}
+                                <div class="badge-wrapper">
+                                  {%- assign popup_setting = 'popup_content_' | append: i -%}   
+                                  {%- if block.settings[popup_setting] != blank -%}   
+                                    <button class="badge-popup-trigger" data-badge-index="{{ i }}">
+                                      <img src="{{ block.settings[badge_setting] | image_url }}" 
+                                           alt="Security badge {{ i }}"
+                                           style="width: {{ block.settings[width_setting] }}px; height: auto;">
+                                    </button>
+                                  {%- assign link_setting = 'badge_link_' | append: i -%}
+                                  {%- elsif block.settings[link_setting] != blank -%}
+                                    <a href="{{ block.settings[link_setting] }}" target="_blank">                                    
+                                      <img src="{{ block.settings[badge_setting] | image_url }}" 
+                                           alt="Security badge {{ i }}"
+                                           style="width: {{ block.settings[width_setting] }}px; height: auto;">
+                                    </a>
+                                  {%- else -%}
+                                    <img src="{{ block.settings[badge_setting] | image_url }}" 
+                                         alt="Security badge {{ i }}"
+                                         style="width: {{ block.settings[width_setting] }}px; height: auto;">
+                                  {%- endif -%}
+                                </div>
+                              {%- endif -%}
+                            {%- endfor -%}
+                          </div>
                         {%- endif -%}
                       </div>
                     </div>
@@ -406,35 +398,92 @@
       </div>
     </div>
   {%- else -%}
-    {%- comment -%}We display the quick view within the product template so we can re-use the same settings{%- endcomment -%}
     <div class="featured-product">
       {%- render 'product-gallery' -%}
       {%- render 'product-info' -%}
     </div>
   {%- endif -%}
+
+<!-- Début popups -->
+{%- for i in (1..3) -%}
+  {%- assign popup_setting = 'popup_content_' | append: i -%}
+  {%- if block.settings[popup_setting] != blank -%}
+    <div class="badge-popup" id="popup-{{ i }}" aria-hidden="true">
+      <div class="popup-content">
+        <button class="popup-close" aria-label="Fermer">
+          {% render 'icon', icon: 'close' %}
+        </button>
+        <div class="popup-text">
+        {%- if block.settings[popup_setting] != blank -%}
+          {{ block.settings[popup_setting] }}
+        {%- endif -%}
+        </div>
+      </div>
+    </div>
+  {%- endif -%}
+{%- endfor -%}
+
+<style>
+  .badge-popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.5);
+    display: none;
+    z-index: 9999;
+  }
+  .popup-content {
+    background: white;
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 30px;
+    position: relative;
+  }
+  .popup-close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: none;
+    border: none;
+    cursor: pointer;
+  }
+</style>
+
+<script>
+document.querySelectorAll('.badge-popup-trigger').forEach(button => {
+  button.addEventListener('click', (e) => {
+    const badgeNumber = e.currentTarget.dataset.badge
+    document.getElementById(`popup-${badgeNumber}`).style.display = 'block'
+  })
+})
+
+document.querySelectorAll('.popup-close').forEach(button => {
+  button.addEventListener('click', () => {
+    document.querySelectorAll('.badge-popup').forEach(popup => {
+      popup.style.display = 'none'
+    })
+  })
+})
+</script>
+<!-- Fin popups -->
+
 </section>
 
 <script>
   window.ShopifyXR=window.ShopifyXR||function(){(ShopifyXR.q=ShopifyXR.q||[]).push(arguments)};
   ShopifyXR('addModels', {{ product.media | where: 'media_type', 'model' | json }});
 
-  // We save the ID of the product in the local storage, as it can be used by the "recently viewed products" section
   (() => {
     let items = JSON.parse(localStorage.getItem('recentlyViewedProducts') || '[]');
-
-    // If the product already exists we first remove it
     if (items.includes({{product.id | json}})) {
       items.splice(items.indexOf({{ product.id | json }}), 1);
     }
-
     items.unshift({{ product.id | json }});
-
-    // Then, we save the current product into the local storage, by keeping only the 18 most recent
     try {
       localStorage.setItem('recentlyViewedProducts', JSON.stringify(items.slice(0, 18)));
-    } catch (error) {
-      // Do nothing, this may happen in Safari in incognito mode
-    }
+    } catch (error) {}
   })();
 </script>
 
@@ -569,13 +618,6 @@
           "label": "Show dynamic checkout button",
           "info": "Each customer will see their preferred payment method from those available on your store, such as PayPal or Apple Pay. [Learn more](https://help.shopify.com/manual/using-themes/change-the-layout/dynamic-checkout)",
           "default": true
-        },
-        {
-          "type": "checkbox",
-          "id": "show_gift_card_recipient",
-          "label": "Show recipient information form for gift card products",
-          "info": "Gift card products can optionally be sent directly to a recipient along with a personal message. [Learn more](https://help.shopify.com/manual/online-store/themes/customizing-themes/add-gift-card-recipient-fields)",
-          "default": false
         }
       ]
     },
@@ -732,37 +774,6 @@
       ]
     },
     {
-      "type": "complementary_products",
-      "name": "Complementary products",
-      "limit": 1,
-      "settings": [
-        {
-          "type": "paragraph",
-          "content": "To select complementary products, use the Search & Discovery app. [Learn more](https://help.shopify.com/en/manual/online-store/search-and-discovery/product-recommendations#complementary-products)"
-        },
-        {
-          "type": "text",
-          "id": "title",
-          "label": "Heading",
-          "default": "Pairs well with"
-        },
-        {
-          "type": "range",
-          "id": "products_count",
-          "min": 1,
-          "max": 10,
-          "label": "Products count",
-          "default": 10
-        },
-        {
-          "type": "checkbox",
-          "id": "show_quick_buy",
-          "label": "Show quick buy",
-          "default": true
-        }
-      ]
-    },
-    {
       "type": "reviews",
       "name": "Reviews",
       "limit": 1,
@@ -810,21 +821,98 @@
           "default": true
         },
         {
+          "type": "header",
+          "content": "Badge 1"
+        },
+        {
           "type": "image_picker",
-          "id": "custom_security_badge",
-          "label": "Security badge",
+          "id": "custom_security_badge_1",
+          "label": "Security badge 1",
           "info": "800 x 200px .jpg recommended"
         },
         {
           "type": "range",
-          "id": "custom_security_badge_width",
-          "min": 100,
+          "id": "custom_security_badge_width_1",
+          "min": 10,
           "max": 500,
           "step": 10,
           "unit": "px",
-          "label": "Security badge width",
+          "label": "Security badge 1 width",
           "default": 200
-        }
+        },
+        {
+          "type": "url",
+          "id": "badge_link_1",
+          "label": "Lien du badge 1"
+        },
+        {
+          "type": "textarea",
+          "id": "popup_html_1",
+          "label": "HTML popup 1",
+          "info": "Code HTML/iframe brut"
+        },    
+        {
+          "type": "header",
+          "content": "Badge 2"
+        },
+        {
+          "type": "image_picker",
+          "id": "custom_security_badge_2",
+          "label": "Security badge 2",
+          "info": "800 x 200px .jpg recommended"
+        },
+        {
+          "type": "range",
+          "id": "custom_security_badge_width_2",
+          "min": 10,
+          "max": 500,
+          "step": 10,
+          "unit": "px",
+          "label": "Security badge 2 width",
+          "default": 200
+        },
+        {
+          "type": "url",
+          "id": "badge_link_2",
+          "label": "Lien du badge 2"
+        },
+        {
+          "type": "textarea",
+          "id": "popup_html_2",
+          "label": "HTML popup 2",
+          "info": "Code HTML/iframe brut"
+        },    
+        {
+          "type": "header",
+          "content": "Badge 3"
+        },
+        {
+          "type": "image_picker",
+          "id": "custom_security_badge_3",
+          "label": "Security badge 3",
+          "info": "800 x 200px .jpg recommended"
+        },
+        {
+          "type": "range",
+          "id": "custom_security_badge_width_3",
+          "min": 10,
+          "max": 500,
+          "step": 10,
+          "unit": "px",
+          "label": "Security badge 3 width",
+          "default": 200
+         },
+         {
+           "type": "url",
+           "id": "badge_link_3",
+           "label": "Lien du badge 3"
+         },
+         {
+           "type": "textarea",
+           "id": "popup_html_3",
+           "label": "HTML popup 3",
+           "info": "Code HTML/iframe brut"
+        } 
       ]
     },
     {
