@@ -58,7 +58,7 @@
     "featured-collection": {
       "type": "featured-collection",
       "settings": {
-        "collection": "litter-robot",
+        "collection": "",
         "title": "Featured collection",
         "products_count": 12,
         "layout": "vertical",
@@ -74,7 +74,8 @@
         "collection-1": {
           "type": "collection",
           "settings": {
-            "collection": "",
+            "collection": "litter-robot",
+            "image": "shopify://shop_images/H11614c28323c4d499f2e01d96d09adb1z.jpg",
             "link": ""
           }
         },
