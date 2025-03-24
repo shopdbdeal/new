@@ -59,11 +59,11 @@
         ".slideshow__button {font-size: 18px; font-weight: 700;}"
       ],
       "settings": {
-        "edge_to_edge": false,
+        "edge_to_edge": true,
         "section_size": "small",
         "carousel_effect": "slide",
         "autoplay": true,
-        "cycle_speed": 5
+        "cycle_speed": 3
       }
     },
     "featured-collection": {
