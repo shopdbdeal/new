@@ -82,28 +82,28 @@
         "collection-2": {
           "type": "collection",
           "settings": {
-            "collection": "",
+            "collection": "lanterns-camping",
             "link": ""
           }
         },
         "collection-3": {
           "type": "collection",
           "settings": {
-            "collection": "",
+            "collection": "dog-feeder-automatic",
             "link": ""
           }
         },
         "collection-4": {
           "type": "collection",
           "settings": {
-            "collection": "",
+            "collection": "music-boxing-machine",
             "link": ""
           }
         },
         "collection-5": {
           "type": "collection",
           "settings": {
-            "collection": "",
+            "collection": "back-massager",
             "link": ""
           }
         },
