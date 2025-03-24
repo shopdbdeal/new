@@ -208,9 +208,9 @@
         "image": "shopify://shop_images/379d91db-95dd-4b73-a435-7a8498448bcb_raw_image.png",
         "image_position": "left",
         "image_width": 40,
-        "title": "dfgsd",
-        "content": "<p>Use this text to share information about your brand with your customers.<br/>Describe a product, share announcements, or welcome customers to your store.</p>",
-        "button_text": "Our products",
+        "title": "Who We Are",
+        "content": "<p>At eSavingHub, we enhance your e-commerce experience with top-notch customer service and unbeatable prices, backed by a 30-day return policy.</p>",
+        "button_text": "Learn More",
         "button_link": "shopify://pages/abouts-us"
       }
     },
