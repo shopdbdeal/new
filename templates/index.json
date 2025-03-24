@@ -15,37 +15,22 @@
         "slide-1": {
           "type": "image",
           "settings": {
-            "show_overlay": false,
-            "overlay_opacity": 30,
+            "image": "shopify://shop_images/16x9_For_slider_e_commerce__type_prod.png",
+            "show_overlay": true,
+            "overlay_opacity": 94,
             "text_color": "#ffffff",
-            "title": "Slide title",
-            "content": "Tell your story",
-            "content_position": "middle_center",
-            "button_background": "#ffffff",
-            "button_text_color": "#000000",
-            "button_text": "Button",
-            "link": ""
-          }
-        },
-        "slide-2": {
-          "type": "image",
-          "settings": {
-            "show_overlay": false,
-            "overlay_opacity": 30,
-            "text_color": "#ffffff",
-            "title": "Slide title",
-            "content": "Tell your story",
-            "content_position": "middle_center",
-            "button_background": "#ffffff",
-            "button_text_color": "#000000",
-            "button_text": "Button",
-            "link": ""
+            "title": "Relieve & Recharge",
+            "content": "Discover ultimate relaxation with our premium back massagers. Ease tension, soothe muscles, and unwind in style.",
+            "content_position": "middle_left",
+            "button_background": "#1a237e",
+            "button_text_color": "#ffffff",
+            "button_text": "Explore the Collection",
+            "link": "shopify://collections/back-massager"
           }
         }
       },
       "block_order": [
-        "slide-1",
-        "slide-2"
+        "slide-1"
       ],
       "settings": {
         "edge_to_edge": false,
