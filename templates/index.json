@@ -52,7 +52,6 @@
       "custom_css": [
         ".flickity-viewport {position: relative; padding-top: 33.333%; height: 0;}",
         ".flickity-slider {position: absolute; top: 0; left: 0; width: 100%; height: 100%;}",
-        ".slideshow__slide,.slideshow__slide-inner,.slideshow__image {height: 100%;}",
         ".slideshow__image {object-fit: cover;}",
         ".slideshow__title {font-size: 36px; font-weight: 700;}",
         ".slideshow__content {font-size: 21px;}",
@@ -63,7 +62,7 @@
         "section_size": "small",
         "carousel_effect": "slide",
         "autoplay": true,
-        "cycle_speed": 3
+        "cycle_speed": 4
       }
     },
     "slideshow_FTm6bx": {
@@ -107,8 +106,8 @@
         "image_VcW6gz"
       ],
       "custom_css": [
-        ".flickity-viewport{display:none}",
-        "@media (max-width:768px){.flickity-viewport{display:block}}"
+        ".flickity-viewport {display: none;}",
+        "@media (max-width: 768px) {.flickity-viewport {display: block; }}"
       ],
       "settings": {
         "edge_to_edge": false,
