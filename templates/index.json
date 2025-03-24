@@ -22,8 +22,8 @@
             "title": "Relieve & Recharge",
             "content": "Discover ultimate relaxation with our premium back massagers. Ease tension, soothe muscles, and unwind in style.",
             "content_position": "top_center",
-            "button_background": "#1a237e",
-            "button_text_color": "#ffffff",
+            "button_background": "#ffffff",
+            "button_text_color": "#1a237e",
             "button_text": "Explore the Collection",
             "link": "shopify://collections/back-massager"
           }
