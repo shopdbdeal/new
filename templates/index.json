@@ -85,7 +85,7 @@
         "collection-1": {
           "type": "collection",
           "settings": {
-            "collection": "dog-feeder-automatic",
+            "collection": "litter-robot",
             "link": ""
           }
         },
@@ -202,20 +202,6 @@
         "zoom_effect": "outside",
         "carousel_effect": "fade"
       }
-    },
-    "blog-posts": {
-      "type": "blog-posts",
-      "settings": {
-        "blog": "",
-        "blog_posts_count": 3,
-        "title": "Blog posts",
-        "link_title": "View all",
-        "show_category": true,
-        "show_author": true,
-        "show_date": true,
-        "show_excerpt": false,
-        "stack_mobile": false
-      }
     }
   },
   "order": [
@@ -223,7 +209,6 @@
     "featured-collection",
     "collection-list",
     "newsletter",
-    "featured-product",
-    "blog-posts"
+    "featured-product"
   ]
 }
