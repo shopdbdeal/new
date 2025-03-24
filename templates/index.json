@@ -58,9 +58,9 @@
     "featured-collection": {
       "type": "featured-collection",
       "settings": {
-        "collection": "",
+        "collection": "back-massager",
         "title": "Featured collection",
-        "products_count": 12,
+        "products_count": 10,
         "layout": "vertical",
         "stack_products": false,
         "show_quick_buy": false,
@@ -74,8 +74,7 @@
         "collection-1": {
           "type": "collection",
           "settings": {
-            "collection": "litter-robot",
-            "image": "shopify://shop_images/H11614c28323c4d499f2e01d96d09adb1z.jpg",
+            "collection": "dog-feeder-automatic",
             "link": ""
           }
         },
@@ -89,7 +88,7 @@
         "collection-3": {
           "type": "collection",
           "settings": {
-            "collection": "dog-feeder-automatic",
+            "collection": "cat-feeder-automatic",
             "link": ""
           }
         },
@@ -124,7 +123,7 @@
         "collection-6"
       ],
       "settings": {
-        "title": "Our collections",
+        "title": "Our best collections",
         "link_title": "View all",
         "link": "shopify://collections",
         "round_images": true,
