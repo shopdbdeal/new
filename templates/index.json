@@ -66,6 +66,54 @@
         "cycle_speed": 3
       }
     },
+    "slideshow_FTm6bx": {
+      "type": "slideshow",
+      "blocks": {
+        "image_BYhjER": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/16x9_For_slider_e_commerce__type_prod.png",
+            "show_overlay": true,
+            "overlay_opacity": 94,
+            "text_color": "#ffffff",
+            "title": "Relieve & Recharge",
+            "content": "Discover ultimate relaxation with our premium back massagers. Ease tension, soothe muscles, and unwind in style.",
+            "content_position": "top_center",
+            "button_background": "#ffffff",
+            "button_text_color": "#1a237e",
+            "button_text": "Explore the Collection",
+            "link": "shopify://collections/back-massager"
+          }
+        },
+        "image_VcW6gz": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/16x9_For_slider_e_commerce__type_prod_1.png",
+            "show_overlay": true,
+            "overlay_opacity": 94,
+            "text_color": "#ffffff",
+            "title": "Feed Your Feline Friend Effortlessly",
+            "content": "Ensure your cat never misses a meal with our smart automatic feeders. Perfect for busy pet parents.",
+            "content_position": "top_center",
+            "button_background": "#ffffff",
+            "button_text_color": "#1a237e",
+            "button_text": "Discover Automatic Feeders",
+            "link": "shopify://collections/cat-feeder-automatic"
+          }
+        }
+      },
+      "block_order": [
+        "image_BYhjER",
+        "image_VcW6gz"
+      ],
+      "settings": {
+        "edge_to_edge": false,
+        "section_size": "small",
+        "carousel_effect": "slide",
+        "autoplay": true,
+        "cycle_speed": 3
+      }
+    },
     "featured-collection": {
       "type": "featured-collection",
       "settings": {
@@ -220,6 +268,7 @@
   },
   "order": [
     "slideshow",
+    "slideshow_FTm6bx",
     "featured-collection",
     "collection-list",
     "newsletter",
