@@ -120,7 +120,7 @@
         "collection-6": {
           "type": "collection",
           "settings": {
-            "collection": "",
+            "collection": "dog-feeder-automatic",
             "link": ""
           }
         }
@@ -137,7 +137,7 @@
         "title": "Our best collections",
         "link_title": "View all",
         "link": "shopify://collections",
-        "round_images": true,
+        "round_images": false,
         "show_collection_title": true
       }
     },
