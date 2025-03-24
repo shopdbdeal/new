@@ -11,6 +11,52 @@
   "type": "footer",
   "name": "Footer group",
   "sections": {
+    "text_with_icons_ragkUx": {
+      "type": "text-with-icons",
+      "blocks": {
+        "item_YrxJ4V": {
+          "type": "item",
+          "settings": {
+            "icon": "bi-delivery",
+            "title": "Free shipping",
+            "content": "<p>We offer free shipping for orders over $49</p>"
+          }
+        },
+        "item_6zHfWV": {
+          "type": "item",
+          "settings": {
+            "icon": "bi-returns",
+            "title": "Hassle-free returns",
+            "content": "<p>Satisfaction guaranteed or your money back</p>"
+          }
+        },
+        "item_iiDJY7": {
+          "type": "item",
+          "settings": {
+            "icon": "bi-customer-support",
+            "title": "Top-notch support",
+            "content": "<p>Amazing customer service team standing by</p>"
+          }
+        },
+        "item_RTVph7": {
+          "type": "item",
+          "settings": {
+            "icon": "bi-secure-payment",
+            "title": "Secure payments",
+            "content": "<p>Guaranteed safe and secure checkout</p>"
+          }
+        }
+      },
+      "block_order": [
+        "item_YrxJ4V",
+        "item_6zHfWV",
+        "item_iiDJY7",
+        "item_RTVph7"
+      ],
+      "settings": {
+        "stack_mobile": true
+      }
+    },
     "newsletter_DhjxJV": {
       "type": "newsletter",
       "settings": {
@@ -114,6 +160,7 @@
     }
   },
   "order": [
+    "text_with_icons_ragkUx",
     "newsletter_DhjxJV",
     "text-with-icons",
     "footer"
