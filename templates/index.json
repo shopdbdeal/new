@@ -158,10 +158,10 @@
         "image": "shopify://shop_images/379d91db-95dd-4b73-a435-7a8498448bcb_raw_image.png",
         "image_position": "left",
         "image_width": 45,
-        "title": "Your title",
+        "title": "dfgsd",
         "content": "<p>Use this text to share information about your brand with your customers.<br/>Describe a product, share announcements, or welcome customers to your store.</p>",
         "button_text": "Our products",
-        "button_link": "shopify://collections/all"
+        "button_link": "shopify://pages/abouts-us"
       }
     },
     "featured-product": {

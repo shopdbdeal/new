@@ -337,5 +337,8 @@
       "checkout_button_color": "#cb1836",
       "checkout_error_color": "#ff0000"
     }
+  },
+  "platform_customizations": {
+    "custom_css": []
   }
 }
