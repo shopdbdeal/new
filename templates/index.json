@@ -143,11 +143,25 @@
     },
     "newsletter": {
       "type": "newsletter",
+      "disabled": true,
       "settings": {
         "title": "Newsletter",
         "content": "<p>A short sentence describing what someone will receive by subscribing</p>",
         "background": "#1e2d7d",
         "text": "#ffffff"
+      }
+    },
+    "image_with_text_C4fGTK": {
+      "type": "image-with-text",
+      "custom_css": [],
+      "settings": {
+        "image": "shopify://shop_images/379d91db-95dd-4b73-a435-7a8498448bcb_raw_image.png",
+        "image_position": "left",
+        "image_width": 45,
+        "title": "Your title",
+        "content": "<p>Use this text to share information about your brand with your customers.<br/>Describe a product, share announcements, or welcome customers to your store.</p>",
+        "button_text": "Our products",
+        "button_link": "shopify://collections/all"
       }
     },
     "featured-product": {
@@ -209,6 +223,7 @@
     "featured-collection",
     "collection-list",
     "newsletter",
+    "image_with_text_C4fGTK",
     "featured-product"
   ]
 }
