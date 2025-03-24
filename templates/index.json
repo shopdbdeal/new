@@ -27,10 +27,27 @@
             "button_text": "Explore the Collection",
             "link": "shopify://collections/back-massager"
           }
+        },
+        "image_h8EKRb": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/16x9_For_slider_e_commerce__type_prod_1.png",
+            "show_overlay": true,
+            "overlay_opacity": 94,
+            "text_color": "#ffffff",
+            "title": "Feed Your Feline Friend Effortlessly",
+            "content": "Ensure your cat never misses a meal with our smart automatic feeders. Perfect for busy pet parents.",
+            "content_position": "top_center",
+            "button_background": "#ffffff",
+            "button_text_color": "#1a237e",
+            "button_text": "Discover Automatic Feeders",
+            "link": "shopify://collections/cat-feeder-automatic"
+          }
         }
       },
       "block_order": [
-        "slide-1"
+        "slide-1",
+        "image_h8EKRb"
       ],
       "custom_css": [
         ".flickity-viewport {position: relative; padding-top: 33.333%; height: 0;}",
