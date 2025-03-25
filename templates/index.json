@@ -118,6 +118,9 @@
     },
     "featured-collection": {
       "type": "featured-collection",
+      "custom_css": [
+        ".product-item__title {display: -webkit-box; -webkit-line-clamp: 2; /* Nombre de lignes avant coupure */ -webkit-box-orient: vertical; overflow: hidden;}"
+      ],
       "settings": {
         "collection": "back-massager",
         "title": "Featured collection",
