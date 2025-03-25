@@ -124,9 +124,9 @@
         "products_count": 10,
         "layout": "vertical",
         "stack_products": false,
-        "show_quick_buy": false,
+        "show_quick_buy": true,
         "link_title": "View all",
-        "link_url": ""
+        "link_url": "shopify://collections/back-massager"
       }
     },
     "collection-list": {
