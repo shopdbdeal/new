@@ -221,13 +221,14 @@
           "type": "product_meta",
           "settings": {
             "show_vendor": true,
-            "show_sku": false,
+            "show_sku": true,
             "show_reviews_badge": false,
-            "show_share_buttons": true
+            "show_share_buttons": false
           }
         },
         "featured-description": {
           "type": "featured_description",
+          "disabled": true,
           "settings": {}
         },
         "variant-selector": {
@@ -261,7 +262,7 @@
         "link_title": "View details",
         "link_url": "",
         "image_size": "small",
-        "enable_image_zoom": true,
+        "enable_image_zoom": false,
         "enable_video_looping": false,
         "zoom_effect": "outside",
         "carousel_effect": "fade"
