@@ -76,7 +76,8 @@
         "judge_me_reviews_review_snippet_widget_zHX49L"
       ],
       "custom_css": [
-        ".jdgm-rev-snippet-card__pic-wrapper {display: none;}"
+        ".jdgm-rev-snippet-card__pic-wrapper {display: none;}",
+        "#more-payment-options-link {display: none !important;}"
       ],
       "settings": {
         "image_size": "small",
