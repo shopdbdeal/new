@@ -428,8 +428,8 @@
         "other": "Only {{count}} units left"
       },
       "in_stock_with_quantity_count": {
-        "one": "In stock ({{count}} unit), ready to be shipped",
-        "other": "In stock ({{count}} units), ready to be shipped"
+        "one": "In stock",
+        "other": "In stock"
       },
       "add_to_cart": "Add to cart",
       "sold_out": "Sold out",
