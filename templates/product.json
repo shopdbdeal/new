@@ -118,13 +118,19 @@
     },
     "product-recommendations": {
       "type": "product-recommendations",
+      "custom_css": [
+        ".product-item__title {display: -webkit-box; -webkit-line-clamp: 2; /* Nombre de lignes avant coupure */ -webkit-box-orient: vertical; overflow: hidden;}"
+      ],
       "settings": {
         "heading": "You may also like",
-        "show_quick_buy": false
+        "show_quick_buy": true
       }
     },
     "recently-viewed-products": {
       "type": "recently-viewed-products",
+      "custom_css": [
+        ".product-item__title {display: -webkit-box; -webkit-line-clamp: 2; /* Nombre de lignes avant coupure */ -webkit-box-orient: vertical; overflow: hidden;}"
+      ],
       "settings": {
         "title": "Recently viewed",
         "show_quick_buy": false
