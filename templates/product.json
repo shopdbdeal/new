@@ -17,7 +17,7 @@
           "settings": {
             "show_vendor": true,
             "show_sku": true,
-            "show_reviews_badge": true,
+            "show_reviews_badge": false,
             "show_share_buttons": false
           }
         },
@@ -35,7 +35,8 @@
         "buy_buttons": {
           "type": "buy_buttons",
           "settings": {
-            "show_payment_button": true
+            "show_payment_button": true,
+            "show_gift_card_recipient": false
           }
         },
         "description": {
@@ -56,7 +57,8 @@
           "type": "trust",
           "settings": {
             "trust_title": "Payment & Security",
-            "show_payment_icons": true
+            "show_payment_icons": true,
+            "custom_security_badge_width": 200
           }
         },
         "judge_me_reviews_review_snippet_widget_zHX49L": {
